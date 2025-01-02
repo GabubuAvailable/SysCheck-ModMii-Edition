@@ -102,7 +102,7 @@ void transmitSyscheck(char ReportBuffer[200][100], int *lines) {
 	gprintf("bufTransmit: %s ENDE len:%u\n", bufTransmit, strlen(bufTransmit));
 	gprintf("OK3\n");
 	char host[48];
-	sprintf(host, "http://syscheck.rc24.xyz/syscheck_receiver.php");
+	sprintf(host, "http://syscheck.crafterpika.cc/syscheck_receiver.php");
 	http_post(host, 1024, bufTransmit);
 	printLoadingBar(TXT_Upload, 80);
 	gprintf("OK4\n\n");
